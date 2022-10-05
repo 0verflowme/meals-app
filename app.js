@@ -12,7 +12,7 @@ const createMealInfoDiv = (meal, mealInput) => {
         <div onclick="getMealDetails(${meal.idMeal})" class="card border-0 shadow cursor" style="width: 18rem; border-radius: 10px">
             <img src="${mealPhoto}" class="card-img-top" style="width: 18rem; border-radius: 10px 10px 0 0" alt="...">
             <div class="card-body">
-                <h5 class="card-title text-center">${mealName}</h5>
+                <h5 class="card-title text-center fw-light">${mealName}</h5>
             </div>
         </div>
     </a>
@@ -20,7 +20,7 @@ const createMealInfoDiv = (meal, mealInput) => {
   const mealInfoSection = document.getElementById("meal-info-section");
   const mealInfoDiv = document.createElement("div");
   mealInfoDiv.className =
-    "col-xm-1 col-sm-2 col-md-3 p-3 d-flex justify-content-center m-sm-3";
+    "col-xm-1 col-sm-2 col-md-3 p-3 d-inline-flex justify-content-center m-sm-3";
   mealInfoDiv.innerHTML = mealInfo;
   mealInfoSection.appendChild(mealInfoDiv);
 };
