@@ -4,8 +4,6 @@
 
 const likedList = [];
 
-// module.exports = {likedList};
-
 const createMealInfoDiv = (meal, mealInput) => {
   const mealPhoto = meal.strMealThumb;
   const mealName = meal.strMeal;
