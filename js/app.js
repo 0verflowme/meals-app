@@ -1,6 +1,4 @@
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//================ Display Searched Meal - OK ================
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Display Searched Meal
 
 var likedList = [];
 
@@ -56,7 +54,7 @@ const searchMeal = () => {
     const mealDetailsSection = document.getElementById("meal-details-section");
     mealDetailsSection.innerHTML = ``;
 
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s= ${mealInput}`;
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealInput}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -70,9 +68,7 @@ const searchMeal = () => {
 
 document.getElementById("meal-submit").addEventListener("click", searchMeal);
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//================ Display Meal Details - OK ================
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Display Meal Details
 
 const showMealDetailsDiv = (data) => {
   const meal = data.meals[0];
