@@ -124,6 +124,7 @@ const showMealDetailsDiv = (data) => {
   const likedBtn = document.getElementById("liked");
   likedBtn.addEventListener("click", () => {
     likedList.push(meal["idMeal"]);
+    localStorage.likedList = JSON.stringify(likedList);
     console.log("added to liked list");
   });
 };
