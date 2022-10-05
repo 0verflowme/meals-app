@@ -121,14 +121,18 @@ const showMealDetailsDiv = (data) => {
 
   const likedBtn = document.getElementById("liked");
   likedBtn.addEventListener("click", () => {
-    if(likedList.length == 0){
-      if (localStorage.likedList){
+    if (likedList.length == 0) {
+      if (localStorage.likedList) {
         likedList = JSON.parse(localStorage.likedList);
       }
     }
-    likedList.push(meal["idMeal"]);
-    localStorage.likedList = JSON.stringify(likedList);
-    console.log("added to liked list");
+    if (likedList.includes(meal["idMeal"])) {
+      alert("Item already in list");
+    } else {
+      likedList.push(meal["idMeal"]);
+      localStorage.likedList = JSON.stringify(likedList);
+      console.log("added to liked list");
+    }
   });
 };
 
