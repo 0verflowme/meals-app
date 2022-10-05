@@ -14,7 +14,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Meals App which is a part of my skill test.
     <br> 
 </p>
 
@@ -39,12 +39,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them.
 
-```
 > Bootstrap
 > js
 > Font Awesome
 > TheMealsDB API
-```
 
 ## 🎈 Usage <a name="usage"></a>
 
